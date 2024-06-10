@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:jobapp/src/features/authentication/screens/company/companyHome.dart';
-import 'package:jobapp/src/features/authentication/screens/employee/employeeHome.dart';
+import 'package:jobpoint/src/features/authentication/screens/company/companyHome.dart';
+import 'package:jobpoint/src/features/authentication/screens/employee/employeeHome.dart';
 
 class WelcomeWindow extends StatelessWidget {
   const WelcomeWindow({super.key});
@@ -71,7 +71,8 @@ class WelcomeWindow extends StatelessWidget {
             child: InkWell(
               onTap: () {
                 Navigator.of(context).push(
-                  MaterialPageRoute(builder: (context) => const CompanyHome()),
+                  MaterialPageRoute(
+                      builder: (context) => const CompanyDetails()),
                 );
               },
               child: Container(
